@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
+<h1>Gönderi guncelle</h1>
+
+<form method="post">
+    <input type="hidden" name="bookID" value="{{ veri[0] }}"><br>
+    <label>Konu  :</label>
+    <input type="text" name="bookTitle" value="{{ veri[1] }}"><br>
+    <label>Kişi Adı :</label>
+    <input type="text" name="bookAuthor" value="{{ veri[2] }}" ><br>
+    <label>Gönderi :</label>
+    <input type="text" name="bookYear" value="{{ veri[3] }}"><br>
+    <input type="submit">
+
+</form>
+
+
+{% endblock %}
+

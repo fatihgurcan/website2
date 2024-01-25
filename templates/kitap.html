@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Gönderiler</h1>
+    <hr>
+    <ul>
+        {% for j in veri %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="kitapdetayi/{{ j[0] }}"><h5 class="card-title">{{ j[1] }}</h5></a>
+                    <p class="card-text">{{ j[2] }}</p>
+                    <a href="kitapsil/{{ j[0] }}" class="btn btn-primary">Sil</a>
+                    <a href="kitapguncelle/{{ j[0] }}" class="btn btn-primary">Guncelle</a>
+                </div>
+            </div>
+        {% endfor %}
+    </ul>
+    <hr>
+{% endblock %}

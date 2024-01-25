@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+
+<h1>gönderi ekle</h1>
+
+<form method="post">
+    <label>Konu :</label>
+    <input type="text" name="bookTitle"><br>
+    <label>Kişi adı :</label>
+    <input type="text" name="bookAuthor"><br>
+    <label>Gönderi :</label>
+    <input type="text" name="bookYear"><br>
+    <input type="submit">
+
+</form>
+
+
+{% endblock %}
+
